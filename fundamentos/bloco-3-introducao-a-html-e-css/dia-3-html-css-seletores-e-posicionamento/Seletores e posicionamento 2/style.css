@@ -1,0 +1,50 @@
+div:hover {
+    border-width: 50px;
+    border-color: rgb(160, 105, 95);
+    border-style: solid;
+}
+
+#primaria {
+    color: red;
+}
+
+#secundaria {
+    color: brown;
+}
+
+#complementar {
+    color: yellow;
+    size: 2em;
+}
+
+#escura {
+    color: black;
+}
+
+#clara {
+    color: aliceblue;
+}
+
+#h_prim {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#h_secu {
+    font-family: cursive;
+}
+
+#h_comp {
+    text-decoration: overline;
+}
+
+#h_escu {
+    text-decoration: underline;
+}
+
+#h_clar {
+    font-family: fantasy;
+}
+
+#h_prim, #h_comp, #h_clar {
+    font-style: italic;
+}
