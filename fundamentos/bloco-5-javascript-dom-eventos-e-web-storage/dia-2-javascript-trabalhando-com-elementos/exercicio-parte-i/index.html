@@ -1,0 +1,40 @@
+<main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+    <script>
+        const elemento = document.getElementById("elementoOndeVoceEsta");
+
+        /*elemento.parentNode.style.color = "red";
+
+        const elementoFilho = elemento.firstChild;
+        elementoFilho.innerText = "Primeiro filho";*/
+
+        console.log(elemento.parentNode.firstChild);
+
+        console.log(elemento.nextSibling);
+
+        //Crie um irmão para elemento
+        const paragrafo = document.createElement('p');
+        paragrafo.innerText = 'Oi, tudo bem?';
+        elemento.parentElement.appendChild(paragrafo);
+        
+        //Crie um filho para elemento
+        elemento.appendChild(document.createElement('p'));
+
+        //Crie um filho para o primeiro filho do elemento
+        const paragrafo2 = document.createElement('p');
+        paragrafo2.innerText = 'filho do filho';
+        elemento.firstElementChild.appendChild(paragrafo2);
+        
+        
+
+    </script>
+  </main>
