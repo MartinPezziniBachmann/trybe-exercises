@@ -54,25 +54,34 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-       document.querySelector("p").innerText = "Desenvolvedor Web empregado";
 
-       const arrayMainContent = document.getElementsByClassName("main-content");
-       const mainContent = arrayMainContent[0];
-       mainContent.style.background = "rgb(76,164,109)";
+      //Alterar texto da tag p
+      const paragrafo = document.getElementsByTagName("p")[0];
+      paragrafo.innerText = "Desenvolvedor Web empregado";
 
-       document.querySelector(".main-content .center-content").style.background = "white";
+      //Modifica cor do quadrado amarelo
+      const arrayMainContent = document.getElementsByClassName("main-content");
+      const quadradoAmarelo = arrayMainContent[0];
+      quadradoAmarelo.style.background = "rgb(76,164,109)";
+
+      //Modifica cor do quadrado vermelho
+      const quadradoVermelho = document.getElementsByClassName("center-content")[0];
+      quadradoVermelho.style.background = "white";
        
-       document.querySelector(".title").innerText = "Exercício 5.1 - JavaScript";
+      //Corrige texto do título
+      const titulo = document.getElementsByClassName("title");
+      titulo.innerText = "Exercício 5.1 - JavaScript";
        
-       const arrayP = document.getElementsByTagName("p");
-       for (let index = 0; index < arrayP.length; index += 1) {
-           arrayP[index].style.textTransform = "uppercase";
-       }
+      //Modifica todo texto das tags p para maiusculo
+      const arrayP = document.getElementsByTagName("p");
+      for (let index = 0; index < arrayP.length; index += 1) {
+        arrayP[index].style.textTransform = "uppercase";
+      }
 
-       for (let index = 0; index < arrayP.length; index += 1) {
-           console.log(arrayP[index].innerText);
-       }
-
+      //Printa todo texto das tags p no console
+      for (let index = 0; index < arrayP.length; index += 1) {
+        console.log(arrayP[index].innerText);
+      }
     </script>
   </body>
 </html>
