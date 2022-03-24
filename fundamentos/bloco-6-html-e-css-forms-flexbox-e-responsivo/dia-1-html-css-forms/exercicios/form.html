@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário para concorrer a uma viagem</h1>
+    </header>
+    <main>
+        <form action="">
+            <div id="caixa-inputs">
+                <br>
+                <label for="input-name">Nome: </label>
+                <input type="text" name="name" id="input-name" minlength="10" maxlength="40">
+                <br>
+                <label for="input-email">Email: </label>
+                <input type="email" name="email" id="input-email" minlength="10" maxlength="50">
+                <br>
+                <label for="option-1">Cidade</label><input type="radio" name="destino" id="option-1">
+                <label for="option-2">Campo</label><input type="radio" name="destino" id="option-2">
+                <label for="option-3">Praia</label><input type="radio" name="destino" id="option-3">
+                <label for="option-4">Montanhas</label><input type="radio" name="destino" id="option-4">
+                <br>
+                <fieldset>
+                    <legend>Espaço para digitar a resposta:</legend>
+                    <br>
+                    <textarea name="viagem" id="viagem" cols="30" rows="10" maxlength="500"></textarea>
+                </fieldset>
+                <br>
+                <label for="input-data">Data: </label>
+                <input type="date" name="data" id="input-data">
+                <br>
+                <label for="check-1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label><input type="checkbox" name="aceites" id="check-1">
+                <br>
+                <label for="check-2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label><input type="checkbox" name="aceites" id="check-2" required>
+                <br>
+                <br>
+            </div>
+            <button type="submit" id="botao">Enviar</button>
+        </form>
+        <button id="botao-apagar">Apagar</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
