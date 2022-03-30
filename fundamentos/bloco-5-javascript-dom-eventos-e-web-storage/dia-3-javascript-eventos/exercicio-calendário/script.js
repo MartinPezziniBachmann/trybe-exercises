@@ -163,7 +163,7 @@ function createDaysOfTheWeek() {
   //Exercício 9
 
   function selecionaTarefa(event){
-      event.target.classList.add('task-selected');
+    event.target.classList.add('task-selected');
   }
 
   function adicionaEventoTarefa(elemento, evento, funcao) {
