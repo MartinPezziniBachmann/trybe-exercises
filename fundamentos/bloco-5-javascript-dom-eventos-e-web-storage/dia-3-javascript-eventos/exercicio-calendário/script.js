@@ -8,8 +8,8 @@ function createDaysOfTheWeek() {
       dayListItem.innerHTML = days;
   
       weekDaysList.appendChild(dayListItem);
-    };
-  };
+    }
+  }
   
   createDaysOfTheWeek();
   
