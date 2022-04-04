@@ -26,3 +26,5 @@ listSkills(student1);
 
 console.log('Estudante 2'); 
 listSkills(student2);
+
+console.log(student1.Css);
