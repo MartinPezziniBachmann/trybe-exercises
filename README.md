@@ -1,4 +1,4 @@
-# trybe-exercises# Trybe
+Trybe-exercises
 
 Este repositÃ³rio contÃ©m todas as atividades de aprendizagem desenvolvidas por _[Martin Pezzini Bachmann](https://www.linkedin.com/in/martin-pezzini-bachmann/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
