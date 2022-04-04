@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Trybe
+=======
+# trybe-exercises# Trybe
+>>>>>>> b01e14d33c56d33e5f2aa6715585da55ebeeda34
 
 Este repositÃ³rio contÃ©m todas as atividades de aprendizagem desenvolvidas por _[Martin Pezzini Bachmann](https://www.linkedin.com/in/martin-pezzini-bachmann/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
@@ -248,4 +252,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 36-4: _Entrada e SaÃ­da de dados_
 - [ ] 35-5: _[Projeto - Tech news]()_ -->
 
+<<<<<<< HEAD
 # [...]
+=======
+# [...]
+>>>>>>> b01e14d33c56d33e5f2aa6715585da55ebeeda34
