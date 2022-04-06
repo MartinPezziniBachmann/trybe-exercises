@@ -1,0 +1,23 @@
+{
+  "name": "trybe-exercises",
+  "version": "1.0.0",
+  "description": "Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Martin Pezzini Bachmann](https://www.linkedin.com/in/martin-pezzini-bachmann/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinPezziniBachmann/trybe-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinPezziniBachmann/trybe-exercises/issues"
+  },
+  "homepage": "https://github.com/MartinPezziniBachmann/trybe-exercises#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
