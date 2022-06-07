@@ -1,5 +1,5 @@
 import React from 'react';
-import Joke from './Joke.js';
+import Joke from './Joke.jsx';
 
 class DadJoke extends React.Component {
   constructor() {
