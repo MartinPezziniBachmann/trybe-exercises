@@ -19,5 +19,8 @@
   "homepage": "https://github.com/MartinPezziniBachmann/trybe-exercises#readme",
   "devDependencies": {
     "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "react-router-dom": "^5.3.3"
   }
 }

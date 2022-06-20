@@ -1,16 +1,16 @@
 {
-  "name": "ex-fixacao",
+  "name": "exercicio-fixacao-redux",
   "version": "1.0.0",
   "description": "",
-  "main": "service.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-  "test": "jest --watchAll"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-  "jest": "^28.1.0"
+    "redux": "^4.2.0"
   }
-  } 
+}
