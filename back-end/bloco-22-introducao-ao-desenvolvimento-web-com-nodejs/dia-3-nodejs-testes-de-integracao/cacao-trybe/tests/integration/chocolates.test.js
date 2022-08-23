@@ -46,14 +46,17 @@ const mockFile = JSON.stringify({
       name: 'Mounds',
       brandId: 3,
     },
-  ]});
+  ],
+  nextChocolateId:5
+});
 
 describe('Testando a API Cacao Trybe', function () {
   beforeEach(function () {
     sinon.stub(fs.promises, 'readFile')
       .resolves(mockFile);
+    sinon.stub(fs.promises, 'writeFile')
+      .resolves();
   });
-
   afterEach(function () {
     sinon.restore();
   });
@@ -88,7 +91,6 @@ describe('Testando a API Cacao Trybe', function () {
         }]);
     });
   });
-
   describe('Usando o método GET em /chocolates/brand/:brandId para buscar brandId 1', function () {
     it('Retorna os chocolates da marca Lindt & Sprungli', async function () {
       const response = await chai
@@ -108,6 +110,29 @@ describe('Testando a API Cacao Trybe', function () {
           brandId: 1,
         },
       ]);
+    });
+  });
+  describe('Usando o método POST em /chocolates para adicionar novo chocolate', function () {
+    it('Adiciona um novo chocolate', async function () {
+      const response = await chai
+        .request(app)
+        .post('/chocolates')
+        .send({
+          name: 'Mint Not So Intense',
+          brandId: 2
+        });
+      
+      expect(response.status).to.be.equal(201);
+      expect(response.body.chocolate).to.deep.equal({
+        id: 5,
+        name: 'Mint Not So Intense',
+        brandId: 2
+      });
+    });
+  });
+  describe('Usando o método DELETE em /chocolates para excluir novo chocolate', function () {
+    it('Exclui o chocolate x', async function () {
+
     });
   });
 });

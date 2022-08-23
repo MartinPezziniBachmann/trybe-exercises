@@ -5,6 +5,8 @@ const cacaoTrybe = require('./cacaoTrybe');
 
 const app = express();
 
+app.use(express.json());
+
 app.get('/chocolates', async (req, res) => {
   const chocolates = await cacaoTrybe.getAllChocolates();
   res.status(200).json({ chocolates });
@@ -22,5 +24,14 @@ app.get('/chocolates/brand/:brandId', async (req, res) => {
   const chocolates = await cacaoTrybe.getChocolatesByBrand(Number(brandId));
   res.status(200).json({ chocolates });
 });
+
+app.post('/chocolates', async (req, res) => {
+  const valor = req.body;
+  console.log(valor);
+  const chocolate = await cacaoTrybe.createChocolate(valor);
+  console.log(2);
+  res.status(201).json({ chocolate })
+  console.log(3);
+})
 
 module.exports = app;

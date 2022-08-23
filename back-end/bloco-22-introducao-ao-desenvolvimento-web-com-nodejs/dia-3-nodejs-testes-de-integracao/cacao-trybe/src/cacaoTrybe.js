@@ -13,6 +13,16 @@ const readCacaoTrybeFile = async () => {
   }
 };
 
+const writeCacauTrybe = async (content) => {
+  const path = '/files/cacaoTrybeFile.json';
+  try {
+    const contentFile = await fs.writeFile(join(__dirname, path), JSON.stringify(content));
+    return JSON.parse(contentFile);
+  } catch (error) {
+    return null;
+  }
+};
+
 const getAllChocolates = async () => {
   const cacaoTrybe = await readCacaoTrybeFile();
   return cacaoTrybe.chocolates;
@@ -30,8 +40,28 @@ const getChocolatesByBrand = async (brandId) => {
     .filter((chocolate) => chocolate.brandId === brandId);
 };
 
+const createChocolate = async ({ name, brandId }) => {
+  console.log('func 1');
+  const cacaoTrybe = await readCacaoTrybeFile();
+  console.log(cacaoTrybe);
+  const newChocolate = {
+    id: cacaoTrybe.nextChocolateId,
+    name,
+    brandId,
+  };
+  console.log('func 3');
+  cacaoTrybe.chocolates.push(newChocolate);
+  console.log('func 4');
+  cacaoTrybe.nextChocolateId += 1;
+  console.log('func 5');
+  await writeCacauTrybe(cacaoTrybe);
+  console.log('func 6');
+  return newChocolate;
+};
+
 module.exports = {
     getAllChocolates,
     getChocolateById,
     getChocolatesByBrand,
+    createChocolate,
 };
