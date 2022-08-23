@@ -112,6 +112,66 @@ describe('Testando a API Cacao Trybe', function () {
       ]);
     });
   });
+  describe('Usando o método GET em /chocolates/total para saber a quantidade total de chocolates', function () {
+    it('Retorna a quantidade total de chocolates', async function () {
+      const response = await chai
+        .request(app)
+        .get('/chocolates/total');
+
+      expect(response.status).to.be.equal(200);
+      expect(response.body).to.deep.equal({ chocolatesQuantity: 4 });    
+    });
+  });
+  describe('Usando o método GET em /chocolates/search para buscar um chocolate', function () {
+    it('Retorna os chocolates com Mint no nome', async function () {
+      const response = await chai
+        .request(app)
+        .get('/chocolates/search?name=Mint');
+
+      expect(response.status).to.be.equal(200);
+      expect(response.body).to.deep.equal([{ id: 1, name: 'Mint Intense', brandId: 1 }]);    
+    });
+    it('Retorna um array vazio ao não encontrar nenhum chocolate', async function () {
+      const response = await chai
+        .request(app)
+        .get('/chocolates/search?name=ZZZ');
+
+      expect(response.status).to.be.equal(404);
+      expect(response.body).to.deep.equal([]);
+    });
+  });
+  describe('Usando o método PUT em /chocolates/id para alterar um chocolate', function () {
+    it('Altera o chocolate com o id 1', async function () {
+      const response = await chai
+        .request(app)
+        .put('/chocolates/1')
+        .send({ 
+          "name": "Mint Pretty Good",
+          "brandId": 2
+        });
+
+      expect(response.status).to.be.equal(200);
+      expect(response.body).to.deep.equal({
+        "id": 1,
+        "name": "Mint Pretty Good",
+        "brandId": 2
+      });    
+    });
+    it('Retorna uma mensagem de erro se não encontrar o id', async function () {
+      const response = await chai
+        .request(app)
+        .put('/chocolates/9')
+        .send({ 
+          "name": "Mint Pretty Good",
+          "brandId": 2
+        });
+
+      expect(response.status).to.be.equal(404);
+      expect(response.body).to.deep.equal({ 
+        "message": "chocolate not found"
+      });    
+    });
+  });
   describe('Usando o método POST em /chocolates para adicionar novo chocolate', function () {
     it('Adiciona um novo chocolate', async function () {
       const response = await chai

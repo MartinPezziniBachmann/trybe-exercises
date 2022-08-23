@@ -40,22 +40,46 @@ const getChocolatesByBrand = async (brandId) => {
     .filter((chocolate) => chocolate.brandId === brandId);
 };
 
-const createChocolate = async ({ name, brandId }) => {
-  console.log('func 1');
+const getTotalChocolatesQuantity = async () => {
   const cacaoTrybe = await readCacaoTrybeFile();
-  console.log(cacaoTrybe);
+  const data = cacaoTrybe.chocolates.length;
+  return data;
+}
+
+const filterChocolates = async (name) => {
+  const cacaoTrybe = await readCacaoTrybeFile();
+  return cacaoTrybe.chocolates
+    .filter((chocolate) => chocolate.name.includes(name));
+}
+
+const createChocolate = async ({ name, brandId }) => {
+  const cacaoTrybe = await readCacaoTrybeFile();
   const newChocolate = {
     id: cacaoTrybe.nextChocolateId,
     name,
     brandId,
   };
-  console.log('func 3');
   cacaoTrybe.chocolates.push(newChocolate);
-  console.log('func 4');
   cacaoTrybe.nextChocolateId += 1;
-  console.log('func 5');
   await writeCacauTrybe(cacaoTrybe);
-  console.log('func 6');
+  return newChocolate;
+};
+
+const updateChocolate = async (id, { name, brandId }) => {
+  const cacaoTrybe = await readCacaoTrybeFile();
+  let newChocolate = {
+    id: Number(id),
+    name,
+    brandId,
+  };
+  if (cacaoTrybe.chocolates.some((chocolate) => chocolate.id === Number(id))) {
+    cacaoTrybe.chocolates.map((chocolate) => chocolate.id === id ? newChocolate : chocolate);
+    await writeCacauTrybe(cacaoTrybe);
+  } else {
+    newChocolate = { 
+      "message": "chocolate not found"
+    };
+  }
   return newChocolate;
 };
 
@@ -64,4 +88,7 @@ module.exports = {
     getChocolateById,
     getChocolatesByBrand,
     createChocolate,
+    getTotalChocolatesQuantity,
+    filterChocolates,
+    updateChocolate,
 };
