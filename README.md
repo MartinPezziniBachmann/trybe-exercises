@@ -163,11 +163,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] 22-1: _Node.js: Runtime Assíncrono_
-- [ ] 22-2: _Node.js: API REST com Express_
-- [ ] 22-3: _Node.js: Testes de Integração_
-- [ ] 22-4: _Express: Middlewares_
-- [ ] 22-5: _Node.js: Express e Mysql_
+- [x] 22-1: _Node.js: Runtime Assíncrono_
+- [x] 22-2: _Node.js: API REST com Express_
+- [x] 22-3: _Node.js: Testes de Integração_
+- [x] 22-4: _Express: Middlewares_
+- [x] 22-5: _Node.js: Express e Mysql_
 - [ ] 22-6: _Projeto - Talker Manager_
 
 ##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
