@@ -1,0 +1,25 @@
+use('mongo-exercises');
+
+// Selecionando todos os documentos da coleção
+db.bios.find()
+
+// Selecionando documentos com critérios de busca
+// Query por igualdade
+db.bios.find( { _id: 5 } )
+
+db.bios.find( { "name.last": "Hopper" } )
+
+// Projetando somente os atributos requeridos
+db.bios.find({}, { name: 1 })
+
+// Limitando o número de documentos retornados
+// limit
+db.bios.find().limit(5)
+
+// pretty
+db.bios.find().limit(2).pretty()
+
+// Pulando documentos com skip
+db.bios.find().skip(2)
+
+db.bios.find().limit(10).skip(5)

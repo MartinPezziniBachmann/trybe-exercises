@@ -1,0 +1,29 @@
+use('mongo-exercises');
+
+db.products.drop();
+
+db.products.insertOne({
+    "_id": 1,
+    "productName": "Caixa",
+    "price": 20
+});
+
+db.products.insertMany([
+    { "_id": 2, "productName": "Lapis", "stock": 10, "price": 20,"status":"A"},
+    { "_id": 3, "productName": "Tesoura", "price": 5, "status": "B" },
+    { "_id": 4, "productName": "Borracha", "price": 15, "status": "A" }
+]);
+
+// findAll
+db.products.find();
+
+// findOne
+db.products.findOne();
+
+// find que exibe apenas alguns atributos
+db.products.find({}, { productName: 1, status: 1 });
+
+db.products.find({}, { price: 0, status: 0 });
+
+// conta a quantidade de documentos
+db.products.countDocuments();

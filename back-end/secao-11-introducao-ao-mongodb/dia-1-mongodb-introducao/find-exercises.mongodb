@@ -1,0 +1,33 @@
+use('mongo-exercises');
+
+// Com a coleção bios
+// 1 - Retorne o documento com id igual a 8
+db.bios.find({ _id: 8 })
+
+// 2 - Retorne o documento com o id igual a 8, mas só exiba os atributos id e name
+db.bios.find({ _id: 8 }, { name: 1 })
+
+// 3 - Retorne apenas os atributos name e birth do documento com o id igual a 8
+db.bios.find({ _id: 8 },{ name: 1, birth: 1, _id: 0 })
+
+// 4 - Retorne toso os documentos em que o atributo name.first seja igual a John, com o método pretty
+db.bios.find({ 'name.first': 'John' }).pretty()
+
+// 5 - Retorne os 3 primeiros documentos com o método pretty
+db.bios.find().limit(3).pretty()
+
+// 6 - Retorne 2 documentos pulando os 5 primeiros
+db.bios.find().skip(5)
+
+// Com a coleção books
+// 7 - Retorne a quantidade de documentos da coleção
+db.books.countDocuments()
+
+// 8 - Conte quantos livros existem com o status 'PUBLISH'
+db.books.countDocuments({ status: 'PUBLISH'})
+
+// 9 - Exiba os atributos title, isbn e pageCount dos 3 primeiros livros
+db.books.find({}, { title: 1, isbn: 1, pageCount: 1, _id: 0}).limit(3);
+
+// 10 - Pule 5 documentos e exiba os atributos id, title, authors e status dos livros com o status 'MEAP', limitando em 10 documentos
+db.books.find({ status: 'MEAP' }, { title: 1, authors: 1, status: 1}).skip(5).limit(10)
