@@ -1,0 +1,14 @@
+use('mongo-exercises');
+
+db.restaurants.countDocuments({ rating: { $not: { $lte: 5 } } })
+
+db.restaurants.countDocuments({ $or: [{ rating: { $gte: 6 } }, { borough: { $eq: 'Brooklyn' } }] })
+
+db.restaurants.countDocuments({ $and: [{ borough: { $in: ['Queens', 'Staten Island', 'Brooklyn'] } }, { rating: { $gt: 4 } }] })
+
+db.restaurants.countDocuments({ $nor: [{ rating: { $eq: 1 } }, { cuisine: { $eq: 'American' } }] })
+
+db.restaurants.countDocuments({ $and: [
+  { $or: [{ rating: { $gt: 6, $lt:10 } }] },
+  { $or: [{ borough: 'Brooklyn' }, { cuisine: { $ne: 'Delicatessen' } }] },
+] })
