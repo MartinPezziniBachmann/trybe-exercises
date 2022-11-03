@@ -1,0 +1,5 @@
+use('mongo-exercises');
+
+db.restaurants.deleteOne({ cuisine: { $in: ['Ice Cream', 'Gelato', 'Yogurt', 'Ices'] } })
+
+db.restaurants.deleteMany({ cuisine: { $eq: 'American' } })
