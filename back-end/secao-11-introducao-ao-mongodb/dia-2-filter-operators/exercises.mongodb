@@ -17,7 +17,6 @@ db.superheroes.countDocuments({ 'aspects.height': { $lte: 180 } })
 // 5 - Selecione um herói com 200 ou mais de altura
 db.superheroes.findOne({ 'aspects.height': { $gte: 200 } })
 
-
 // 6 - Retorne o total de heróis com 200 ou mais de altura
 db.superheroes.countDocuments({ 'aspects.height': { $gte: 200 } })
 

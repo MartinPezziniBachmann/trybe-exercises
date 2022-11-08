@@ -1,0 +1,24 @@
+use('class');
+
+// 14 - Remova o campo class dos documentos que possuem esse campo com o valor unknown
+db.xmen.updateMany({ class: 'unknown' }, { $unset: { class: '' } });
+
+// 15 - Renomeie os campos name para hero_name e true_name para full_name. Também adicione o campo power com valor 100 em todos os documentos
+db.xmen.updateMany({ }, { $rename: { name: 'hero_name', true_name: 'full_name' }, $set: { power: 100 } });
+
+// 16 - Altere o poder dos mutantes class omega para 500 se o seu poder for menor que 500
+db.xmen.updateMany({ class: 'omega' }, { $max: { power: 500 } })
+
+// 17 - Altere o poder dos mutantes class gama para 300 se o seu poder for maior que 300
+db.xmen.updateMany({ class: 'gama' }, { $max: { power: 300 } })
+
+// 18 - Decremente em 100 o poder dos mutantes que não possuem a propriedade class
+db.xmen.updateMany({ class: { $exists: false } }, { $inc: { power: -100 } })
+
+// 19 - Adicione o campo areas com o array ["Students Room"] a todos os mutantes que são Senior Staff que tenham poder acima de 100 e para todos os Junior Staff com poder acima de 200
+db.xmen.updateMany({ $or: [{ occupation: 'Senior Staff', power: { $gt: 100 } }, { occupation: 'Junior Staff', power: { $gt: 200 } }] }, { $set: { areas: ['Students Room'] } });
+
+// 20 - Adicione o campo areas com ["Outside"] a todos os Junior Staff que não tenham o campo area definido
+db.xmen.updateMany({ areas: { $exists: false }, occupation: 'Junior Staff' }, { $set: { areas: ['Outside'] } });
+
+db.xmen.find();
