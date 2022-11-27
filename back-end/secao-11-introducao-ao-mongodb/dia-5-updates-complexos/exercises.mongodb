@@ -1,0 +1,130 @@
+use('cinema');
+
+// 1 - Adicione a categoria superhero ao filme Batman
+db.movies.updateOne(
+  { title: 'Batman' }, 
+  { $push: { category: 'superhero' } }
+);
+
+// 2 - Utilize o each para adicionar villain e comic-based ao filme Batman
+db.movies.updateOne(
+  { title: 'Batman' },
+  {
+    $push: {
+      category: {
+        $each: ['villain', 'comic-based']
+      }
+    }
+  }
+);
+
+// 3 - Remova a categoria action do filme Batman
+db.movies.updateOne(
+  { title: 'Batman'},
+  { $pull: { category: 'action' } }
+);
+
+// 4 - Remova a primeira categoria do filme Batman
+db.movies.updateOne(
+  { title: 'Batman'},
+  { $pop: { category: -1 } }
+);
+
+// 5 - Remova a ultima categoria do filme Batman
+db.movies.updateOne(
+  { title: 'Batman'},
+  { $pop: { category: 1 } }
+);
+
+// 6 - Adicione action nas categorias de Batman, garantindo que o valor não seja duplicado
+db.movies.updateOne(
+  { title: 'Batman' },
+  { $addToSet: { category: 'action' } }
+);
+
+// 7 - Adicione a cateogria 90's aos filmes Batman e Home Alone
+db.movies.updateMany(
+  { title: { $in: ['Batman', 'Home Alone'] } },
+  { $push: { category: "90's" } }
+);
+
+// 8 - Adicione o array cast com os atores no filme Home Alone
+db.movies.updateOne(
+  { title: 'Home Alone' },
+  { 
+    $push: { 
+      cast: {
+        $each: [
+        {
+          "actor": "Macaulay Culkin",
+          "character": "Kevin"
+        },
+        {
+          "actor": "Joe Pesci",
+          "character": "Harry"
+        },
+        {
+          "actor": "Daniel Stern"
+        }
+        ]
+      }
+    } 
+  }
+);
+
+// 9 - Adicione o campo character com o valor Marv no array cast de Home Alone
+db.movies.updateOne(
+  { title: 'Home Alone', "cast.actor": 'Daniel Stern' },
+  { $set: { 'cast.$.character': 'Marv' } }
+);
+
+// 10 - Crie um array cast para o filme Batman
+db.movies.updateOne(
+  { title: 'Batman' },
+  {
+    $push: {
+      cast: {
+        $each: [
+          {
+            "character": "Batman"
+          },
+          {
+            "character": "Alfred"
+          },
+          {
+            "character": "Coringa"
+          }
+        ]
+      }
+    }
+  }
+);
+
+// 11 - Produza querys que adicionem os atores nos campos de cast
+db.movies.updateOne(
+  { title: 'Batman', "cast.character": 'Batman' },
+  { $set: { 'cast.$.actor': 'Christian Bale' } }
+);
+db.movies.updateOne(
+  { title: 'Batman', "cast.character": 'Alfred' },
+  { $set: { 'cast.$.actor': 'Michael Cane' } }
+);
+db.movies.updateOne(
+  { title: 'Batman', "cast.character": 'Coringa' },
+  { $set: { 'cast.$.actor': 'Heath Ledger' } }
+);
+
+// 12 - Adicione outros atores para o personagem Batman
+db.movies.updateOne(
+  { title: 'Batman', "cast.character": 'Batman' },
+  { 
+    $push: { 
+      'cast.$.actor': { 
+        $each: ['Michael Keaton', 'Val Kilmer', 'George Clooney'],
+        $sort: 1 
+      } 
+    } 
+  }
+);
+
+db.movies.find();
