@@ -1,6 +1,6 @@
 interface MyInterface {
   myNumber: number;
-  MyFunc(myParam: number): string;
+  myFunc(myParam: number): string;
 }
 
 class MyClass implements MyInterface {
