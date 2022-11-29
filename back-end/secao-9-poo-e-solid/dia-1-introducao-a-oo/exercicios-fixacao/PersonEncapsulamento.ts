@@ -39,7 +39,7 @@ const pe1 = new PersonEncapsulamento('Maria', 171, 58, 19);
 const pe2 = new PersonEncapsulamento('João', 175, 66, 18);
 
 // Alteração direta de variável pública
-p1.name = 'Mariah';
+pe1.name = 'Mariah';
 // Acesso direto a variável pública
 console.log(pe1.name);
 // Acesso a método público que manipula atributo privado
