@@ -11,7 +11,7 @@ def vertical_print():
         print()
 
 
-# vertical_print()
+vertical_print()
 
 MAX_ATTEMPTS = 3
 
@@ -37,13 +37,13 @@ def check_game_result(secret_word, guesses):
         print(f"You lose: {secret_word}")
 
 
-# if __name__ == "__main__":
-#     with open("words.json") as file:
-#         words = json.load(file)
-#     secret_word, scrambled_word = draw_secret_word(words)
-#     print(f"Scrambled word is {scrambled_word}")
-#     guesses = collect_guesses()
-#     check_game_result(secret_word, guesses)
+if __name__ == "__main__":
+    with open("words.json") as file:
+        words = json.load(file)
+    secret_word, scrambled_word = draw_secret_word(words)
+    print(f"Scrambled word is {scrambled_word}")
+    guesses = collect_guesses()
+    check_game_result(secret_word, guesses)
 
 
 def calculate_books_by_categories(books):
