@@ -81,13 +81,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 9-4: _Projeto - Carrinho de Compras_
 
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :white_check_mark:
 
 ##### Bloco 10: Introdução a React
 
 - [X] 10-1: _'Hello, world!' no React!_
 - [X] 10-2: _Componentes React_
-- [X] 10-3: _Projeto - Sistema Solar_
+- [X] 10-3: _[Projeto - Sistema Solar](https://github.com/martin-bachmann/solar-system-react)_
 
 ##### Bloco 11: Componentes com estado, eventos e formulários com React
 
@@ -137,14 +137,15 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 18-1: _Projeto - App de Receitas_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+
+## Desenvolvimento Back-end :white_check_mark:
 
 ##### Bloco 19: Docker: Utilizando Containers
 
 - [x] 19-1: _Utilizando Containers - Docker_
 - [x] 19-2: _Manipulando Imagens no Docker_
 - [x] 19-3: _Orquestrando Containers com Docker Compose_
-- [x] 19-4: _Projeto - Docker Todo-List_
+- [x] 19-4: _[Projeto - Docker Todo-List](https://github.com/martin-bachmann/project-docker-commands)_
 
 ##### Bloco 20: Introdução à SQL
 
@@ -152,14 +153,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 20-2: _Encontrando dados em um banco de dados_
 - [x] 20-3: _Filtrando dados de forma específica_
 - [x] 20-4: _Manipulando tabelas_
-- [x] 20-5: _Projeto - All For One_
+- [x] 20-5: _[Projeto - All For One](https://github.com/martin-bachmann/project-mysql-commands-one)_
 
 ##### Bloco 21: Funções SQL, JOINs e Normalização
 
 - [x] 21-1: _Funções mais usadas no SQL_
 - [x] 21-2: _Descomplicando JOINs_
 - [x] 21-2: _Transformando ideias em um modelo de banco de dados_
-- [x] 21-3: _Projeto - One For All_
+- [x] 21-3: _[Projeto - One For All](https://github.com/martin-bachmann/project-mysql-commands-two)_
 
 ##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
@@ -168,89 +169,109 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 22-3: _Node.js: Testes de Integração_
 - [x] 22-4: _Express: Middlewares_
 - [x] 22-5: _Node.js: Express e Mysql_
-- [ ] 22-6: _Projeto - Talker Manager_
+- [x] 22-6: _[Projeto - Talker Manager](https://github.com/martin-bachmann/talker-manager-api-node-mysql)_
 
-##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
+##### Seção 5: Arquitetura de Software: Model, Service e Controller
 
-- [ ] 23-1: _Arquitetura de Software - Camada de Model_
-- [ ] 23-2: _Arquitetura de Software - Camada de Controller e Service_
-- [ ] 23-3: _Arquitetura Web - Rest e Restful_
-- [ ] 23-4: _Arquitetura de Software - Testando as Camadas_
-- [ ] 23-5: _Projeto - Store Manager_
+- [x] 5-1: _Arquitetura de Software - Camada Model_
+- [x] 5-2: _Arquitetura de Software - Camada Service_
+- [x] 5-3: _Arquitetura de Software - Camada Controller_
+- [x] 5-4: _[Projeto - Store Manager](https://github.com/martin-bachmann/store-api-node-mysql)_
 
-##### Bloco 24: Node.js: ORM e Autenticação
+##### Seção 6: Node.js: ORM e Autenticação
 
-- [ ] 24-1: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 24-2: _ORM - Associations_
-- [ ] 24-3: _JWT - (JSON Web Token)_
-- [ ] 24-4: _Testando APIs com Testes de Integração_
-- [ ] 24-5: _Projeto - API de Blogs_
+- [x] 6-1: _ORM - Interface da aplicação com o banco de dados_
+- [x] 6-2: _ORM - Associations 1:1 e 1:N_
+- [x] 6-3: _ORM - Associations N:N e Transactions_
+- [x] 6-4: _JWT - (JSON Web Token)_
+- [x] 6-5: _[Projeto - API de Blogs](https://github.com/martin-bachmann/blogs-api-node-sequelize)_
 
-##### Bloco 25: Deployment
+##### Seção 7: Masterclass: Implantação de Aplicações na Nuvem
 
-- [ ] 25-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 25-2: _Deploy Docker & Heroku_
-- [ ] 25-3: _Projeto - Stranger Things_
+- [x] 7-1: _Ingraestrutura: Deploy com Railway_
 
-##### Bloco 26: TypeScript
+##### Seção 8: Introdução a TypeScript
 
-- [ ] 26-1: _Introdução ao TypeScript_
-- [ ] 26-2: _Tipagem Estática e Generics_
-- [ ] 26-3: _Express com TypeScript_
-- [ ] 26-4: _Projeto - Trybe Smith_
+- [x] 8-1: _Introdução ao TypeScript_
+- [x] 8-2: _Tipagem Estática e Generics_
+- [x] 8-3: _Express com TypeScript_
+- [x] 8-4: _[Projeto - Trybe Smith](https://github.com/martin-bachmann/trybesmith-api-typescript)_
 
-##### Bloco 27: Programação Orientada a Objetos (POO) e SOLID
+##### Seção 9: Programação Orientada a Objetos (POO) e SOLID
 
-- [ ] 27-1: _Introdução à Orientação a Objetos_
-- [ ] 27-2: _Herança e Interfaces_
-- [ ] 27-2: _Polimorfismo_
-- [ ] 27-2: _SOLID - Introdução e Princípios S, O e D_
-- [ ] 27-2: _SOLID - Princípios L e I_
-- [ ] 27-3: _Projeto - Trybers and Dragons_
+- [x] 9-1: _Introdução à Orientação a Objetos_
+- [x] 9-2: _Herança e Interfaces_
+- [x] 9-3: _Polimorfismo_
+- [x] 9-4: _SOLID - Introdução e Princípios S, O e D_
+- [x] 9-5: _SOLID - Princípios L e I_
+- [x] 9-6: _[Projeto - Trybers and Dragons](https://github.com/martin-bachmann/project-trybers-and-dragons-poo-solid-typescript)_
 
-##### Bloco 28: Projeto - TFC - Trybe Futebol Clube
+##### Seção 10: Projeto - TFC - Trybe Futebol Clube
 
-- [ ] 28-3: _Projeto - Trybe Futebol Clube_
+- [x] 10-1: _[Projeto - Trybe Futebol Clube](https://github.com/martin-bachmann/trybe-futebol-clube-api-typescript)_
 
-##### Bloco 29: Introdução ao MongoDB
+##### Seção 11: Introdução ao MongoDB
 
-- [ ] 29-1: _MongoDB - Introdução_
-- [ ] 29-2: _Filter Operators_
-- [ ] 29-3: _Operadores de consulta_
-- [ ] 29-4: _Updates Simples_
-- [ ] 29-5: _Updates Complexos - Arrays_
-- [ ] 29-6: _Projeto - Commerce_
+- [x] 11-1: _MongoDB - Introdução_
+- [x] 11-2: _Filter Operators_
+- [x] 11-3: _Operadores de consulta_
+- [x] 11-4: _Updates Simples_
+- [x] 11-5: _Updates Complexos - Arrays_
+- [x] 11-6: _[Projeto - Commerce](https://github.com/martin-bachmann/project-mongodb-commands)_
 
-##### Bloco 30: MongoDB com Node.js e POO
+##### Seção 12: APIs OO e NoSQL
 
-- [ ] 30-1: _Mongoose e arquitetura MSC (camada Model)_
-- [ ] 30-2: _Mongoose e arquitetura MSC (camada Service e Controller)_
-- [ ] 30-3: _Projeto - Stranger Things_
+- [x] 30-1: _APIs orientadas a objetos e NoSQL: POO e ODMs_
+- [x] 30-2: _APIs orientadas a objetos e NoSQL: Herança e Abstração_
+- [x] 30-3: _[Projeto - Car Shop](https://github.com/martin-bachmann/car-shop-api-typescript-mongodb)_
 
-##### Bloco 31: Projeto - App de Delivery
+##### Seção 13: Projeto - App de Delivery
 
-- [ ] 31-1: _Projeto - App de Delivery_
+- [x] 13-1: _Projeto - App de Delivery_
 
-##### Bloco 32: MasterClass - VPS, CI/CD
 
-- [ ] 32-1: _MasterClass - VPS, CI/CD_
+## Ciência da Computação :hourglass_flowing_sand:
 
-<!-- 
-## CiÃªncia da ComputaÃ§Ã£o :hourglass_flowing_sand:
+##### Seção 1: Introdução à Python
 
-##### Bloco 35: IntroduÃ§Ã£o - CiÃªncia da ComputaÃ§Ã£o
+- [x] 1-1: _Aprendendo Python_
+- [x] 1-2: _Entrada e Saída de dados_
+- [x] 1-3: _Testes_
+- [x] 1-4: _[Projeto - Job Insights]()_
 
-- [ ] 35-1: _Arquitetura de Computadores_
-- [ ] 35-2: _Arquitetura de redes_
-- [ ] 35-3: _Redes de computadores, ferramentas e seguranÃ§a_
-- [ ] 35-4: _[Projeto - Explorando os protocolos]()_
+##### Seção 2: Padrões de Projeto
 
-##### Bloco 36: Python
+- [x] 2-1: _POO em Python_
+- [x] 2-2: _Padrões - Iterator, Adapter, Strategy_
+- [x] 2-3: _Padrões - Decorator, Observer, Factory_
+- [x] 2-4: _[Projeto - Relatórios de Estoque](https://github.com/martin-bachmann/inventory-report-python-poo-project)_
 
-- [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e ExceÃ§Ãµes_
-- [ ] 35-3: _Entrada e SaÃ­da de dados_
-- [ ] 36-4: _Entrada e SaÃ­da de dados_
-- [ ] 35-5: _[Projeto - Tech news]()_ -->
+##### Seção 3: Raspagem de Dados
 
-# [...]
+- [ ] 3-1: _Raspagem de Dados_
+- [ ] 3-2: _Outras Ferramentas de Raspagem de Dados_
+- [ ] 3-3: _Dia de Atividades - Crawlers + POO_
+- [ ] 3-4: _[Projeto - Tech news]()_
+
+##### Seção 4: Algoritmos
+
+- [x] 4-1: _Complexidade de Algoritmos_
+- [x] 4-2: _Recursividade e Estratégias para solução de problemas_
+- [x] 4-3: _Algoritmos de ordenação e busca_
+- [ ] 4-4: _[Projeto - Algoritmos]()_
+
+##### Seção 5: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
+
+- [ ] 5-1: _Arquitetura de Computadores_
+- [ ] 5-2: _Arquitetura de Redes_
+- [ ] 5-3: _Arrays_
+- [ ] 5-4: _Nó e Listas Encadeadas_
+- [ ] 5-5: _Pilhas e Filas_
+- [ ] 5-6: _[Projeto - TING - Trybe Is Not Google]()_
+
+##### Seção 6: Estrutura de Dados II: Hashmaps e Sets
+
+- [ ] 6-1: _Hashmap e Dict_
+- [ ] 6-2: _Set_
+- [ ] 6-3: _[Projeto - Restaurant Orders]()_
+
