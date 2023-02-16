@@ -237,7 +237,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 1-1: _Aprendendo Python_
 - [x] 1-2: _Entrada e Saída de dados_
 - [x] 1-3: _Testes_
-- [x] 1-4: _[Projeto - Job Insights]()_
+- [x] 1-4: _Projeto - Job Insights_
 
 ##### Seção 2: Padrões de Projeto
 
@@ -251,14 +251,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 3-1: _Raspagem de Dados_
 - [ ] 3-2: _Outras Ferramentas de Raspagem de Dados_
 - [ ] 3-3: _Dia de Atividades - Crawlers + POO_
-- [ ] 3-4: _[Projeto - Tech news]()_
+- [ ] 3-4: _Projeto - Tech news_
 
 ##### Seção 4: Algoritmos
 
 - [x] 4-1: _Complexidade de Algoritmos_
 - [x] 4-2: _Recursividade e Estratégias para solução de problemas_
 - [x] 4-3: _Algoritmos de ordenação e busca_
-- [ ] 4-4: _[Projeto - Algoritmos]()_
+- [ ] 4-4: _Projeto - Algoritmos_
 
 ##### Seção 5: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
 
@@ -267,11 +267,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 5-3: _Arrays_
 - [ ] 5-4: _Nó e Listas Encadeadas_
 - [ ] 5-5: _Pilhas e Filas_
-- [ ] 5-6: _[Projeto - TING - Trybe Is Not Google]()_
+- [ ] 5-6: _Projeto - TING - Trybe Is Not Google_
 
 ##### Seção 6: Estrutura de Dados II: Hashmaps e Sets
 
 - [ ] 6-1: _Hashmap e Dict_
 - [ ] 6-2: _Set_
-- [ ] 6-3: _[Projeto - Restaurant Orders]()_
+- [ ] 6-3: _Projeto - Restaurant Orders_
 
