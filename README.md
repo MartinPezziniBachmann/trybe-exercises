@@ -230,7 +230,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 13-1: _Projeto - App de Delivery_
 
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação :white_check_mark:
 
 ##### Seção 1: Introdução à Python
 
@@ -248,30 +248,30 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Seção 3: Raspagem de Dados
 
-- [ ] 3-1: _Raspagem de Dados_
-- [ ] 3-2: _Outras Ferramentas de Raspagem de Dados_
-- [ ] 3-3: _Dia de Atividades - Crawlers + POO_
-- [ ] 3-4: _Projeto - Tech news_
+- [x] 3-1: _Raspagem de Dados_
+- [x] 3-2: _Outras Ferramentas de Raspagem de Dados_
+- [x] 3-3: _Dia de Atividades - Crawlers + POO_
+- [x] 3-4: _Projeto - Tech news_
 
 ##### Seção 4: Algoritmos
 
 - [x] 4-1: _Complexidade de Algoritmos_
 - [x] 4-2: _Recursividade e Estratégias para solução de problemas_
 - [x] 4-3: _Algoritmos de ordenação e busca_
-- [ ] 4-4: _Projeto - Algoritmos_
+- [x] 4-4: _Projeto - Algoritmos_
 
 ##### Seção 5: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
 
-- [ ] 5-1: _Arquitetura de Computadores_
-- [ ] 5-2: _Arquitetura de Redes_
-- [ ] 5-3: _Arrays_
-- [ ] 5-4: _Nó e Listas Encadeadas_
-- [ ] 5-5: _Pilhas e Filas_
-- [ ] 5-6: _Projeto - TING - Trybe Is Not Google_
+- [x] 5-1: _Arquitetura de Computadores_
+- [x] 5-2: _Arquitetura de Redes_
+- [x] 5-3: _Arrays_
+- [x] 5-4: _Nó e Listas Encadeadas_
+- [x] 5-5: _Pilhas e Filas_
+- [x] 5-6: _Projeto - TING - Trybe Is Not Google_
 
 ##### Seção 6: Estrutura de Dados II: Hashmaps e Sets
 
-- [ ] 6-1: _Hashmap e Dict_
-- [ ] 6-2: _Set_
-- [ ] 6-3: _Projeto - Restaurant Orders_
+- [x] 6-1: _Hashmap e Dict_
+- [x] 6-2: _Set_
+- [x] 6-3: _Projeto - Restaurant Orders_
 
