@@ -237,7 +237,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 1-1: _Aprendendo Python_
 - [x] 1-2: _Entrada e Saída de dados_
 - [x] 1-3: _Testes_
-- [x] 1-4: _Projeto - Job Insights_
+- [x] 1-4: _[Projeto - Job Insights](https://github.com/martin-bachmann/job-insights-python)_
 
 ##### Seção 2: Padrões de Projeto
 
@@ -251,14 +251,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-1: _Raspagem de Dados_
 - [x] 3-2: _Outras Ferramentas de Raspagem de Dados_
 - [x] 3-3: _Dia de Atividades - Crawlers + POO_
-- [x] 3-4: _Projeto - Tech news_
+- [x] 3-4: _[Projeto - Tech news](https://github.com/martin-bachmann/tech-news-python-crawler)_
 
 ##### Seção 4: Algoritmos
 
 - [x] 4-1: _Complexidade de Algoritmos_
 - [x] 4-2: _Recursividade e Estratégias para solução de problemas_
 - [x] 4-3: _Algoritmos de ordenação e busca_
-- [x] 4-4: _Projeto - Algoritmos_
+- [x] 4-4: _[Projeto - Algoritmos](https://github.com/martin-bachmann/project-algorithms-python)_
 
 ##### Seção 5: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
 
@@ -267,11 +267,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-3: _Arrays_
 - [x] 5-4: _Nó e Listas Encadeadas_
 - [x] 5-5: _Pilhas e Filas_
-- [x] 5-6: _Projeto - TING - Trybe Is Not Google_
+- [x] 5-6: _[Projeto - TING - Trybe Is Not Google](https://github.com/martin-bachmann/project-data-structures-one)_
 
 ##### Seção 6: Estrutura de Dados II: Hashmaps e Sets
 
 - [x] 6-1: _Hashmap e Dict_
 - [x] 6-2: _Set_
-- [x] 6-3: _Projeto - Restaurant Orders_
+- [x] 6-3: _[Projeto - Restaurant Orders](https://github.com/martin-bachmann/project-data-structures-two)_
 
